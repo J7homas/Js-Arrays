@@ -1,2 +1,2 @@
-# General-Assembly-Assignments
---Jyrell's Submissions.
+# Js-Arrays
+--Jyrell's Submission.
