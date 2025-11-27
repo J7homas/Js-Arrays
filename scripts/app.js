@@ -160,7 +160,7 @@ Complete Exercise 9 in the space below:
 */
 
 function ex_9() {
-	let allFoods = foods.join("->");
+	let allFoods = foods.join(" -> ");
 
 	console.log('Exercise 9 result:', allFoods);
 }
@@ -248,11 +248,13 @@ function ex_12() {
 	nums.forEach(num => {
 		if (num % 3 === 0) {
 			fizz.push(num);
-		} else if(num % 5 === 0){
-			buzz.push(num);
-		} else {
-			fizzbuzz.push(num);
 		}
+		if(num % 5 === 0){
+			buzz.push(num);
+		}
+		if(num % 3 === 0 && num % 5 === 0){
+			fizzbuzz.push(num);
+		} 
 	});
 
 	console.log('Exercise 12 Results:');
@@ -283,7 +285,7 @@ const numArrays = [
 ];
 
 function ex_13() {
-	let numList = numArrays.pop();
+	let numList = numArrays[numArrays.length -1];
 	
 	console.log('Exercise 13 result:', numList);
 }
@@ -302,7 +304,7 @@ Complete Exercise 14 in the space below:
 */
 
 function ex_14() {
-	let num = numArrays[2].slice(1);
+	let num = numArrays[2][1];
 
 	console.log('Exercise 14 result:', num);
 }
